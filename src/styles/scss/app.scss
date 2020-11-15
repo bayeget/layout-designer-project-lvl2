@@ -1,0 +1,52 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/global";
+
+@import "components/registration-form";
+@import "components/btn";
+@import "components/subscription-item";
+@import "components/news";
+
+
+
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  background: var(--color-blue);
+
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-white);
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul > li {
+  list-style: none;
+}
+
+.container {
+  position: relative;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@import "layout/grid";
+@import "layout/header";
+@import "layout/banner";
+@import "layout/footer";

@@ -1,0 +1,21 @@
+.banner {
+  position: relative;
+
+  width: 100%;
+  padding: 272px 0 248px;
+  &:before {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../images/banner.png);
+
+    content: '';
+  }
+}

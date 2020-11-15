@@ -1,0 +1,30 @@
+{
+  "name": "layout-designer-project-lvl2",
+  "version": "1.0.0",
+  "description": "![Actions Status](/workflows/hexlet-check/badge.svg)",
+  "main": "index.js",
+  "dependencies": {
+    "surge": "^0.21.6"
+  },
+  "devDependencies": {
+    "htmlhint": "^0.14.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "surge": "^0.21.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bayeget/layout-designer-project-lvl2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bayeget/layout-designer-project-lvl2/issues"
+  },
+  "homepage": "https://github.com/bayeget/layout-designer-project-lvl2#readme"
+}
