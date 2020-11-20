@@ -28,6 +28,10 @@
   justify-content: center;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .flex-1 {
   flex: 1;
 }
@@ -388,6 +392,10 @@
   margin-left: 100px;
 }
 
+.pr-100 {
+  padding-right: 100px;
+}
+
 .ml-335 {
   margin-left: 335px;
 }
@@ -408,7 +416,15 @@ h3 {
 }
 
 .h1 {
-  font-size: 60px;
+  font-size: calc( 0.01875 * 100vw + 24px );
+}
+
+.r-fz-30-18 {
+  font-size: calc( 0.0075 * 100vw + 15.6px );
+}
+
+.r-fz-18-12 {
+  font-size: calc( 0.00375 * 100vw + 10.8px );
 }
 
 .h2 {
@@ -493,7 +509,8 @@ h3 {
 
 .registration-form {
   position: relative;
-  width: 570px;
+  max-width: 570px;
+  width: 100%;
 }
 
 .registration-input {
@@ -632,6 +649,12 @@ ul > li {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 
 .row {
@@ -708,6 +731,33 @@ ul > li {
 .menu-item.active {
   color: var(--color-white);
 }
+@media screen and (max-width: 992px) {
+  .menu {
+    margin: auto;
+  }
+  .menu-item {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menu {
+    margin: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search {
+    flex: 1 0 100%;
+  }
+}
 
 .search-input {
   width: 278px;
@@ -721,6 +771,14 @@ ul > li {
 }
 .search-input:focus, .search-input:hover {
   outline: none;
+}
+
+@media screen and (max-width: 992px) {
+  .nav {
+    order: 1;
+    flex-basis: 100%;
+    margin-top: 20px;
+  }
 }
 
 .banner {

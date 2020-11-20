@@ -13,12 +13,35 @@
 }
 
 .menu {
-  width: 405px;
+  width: 405px;  
   &-item {
     color: var(--color-link-secondary);
     &.active {
       color: var(--color-white);
     }
+  }
+  @include media(medium) {
+    margin: auto;
+    &-item {
+      margin-bottom: 10px;
+    }
+  }
+  @include media(custom, 500px) {
+    margin: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.logo {
+  @include media(custom, 500px) {
+    margin-bottom: 20px;
+  }
+}
+
+.search {
+  @include media(custom, 500px) {
+    flex: 1 0 100%;
   }
 }
 
@@ -38,5 +61,13 @@
   &:focus,
   &:hover {
     outline: none;
+  }
+}
+
+.nav {
+  @include media(medium) {
+    order: 1;
+    flex-basis: 100%;
+    margin-top: 20px;
   }
 }

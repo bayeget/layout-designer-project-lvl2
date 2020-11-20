@@ -14,6 +14,10 @@
   justify-content: center;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .flex-1 {
   flex: 1;
 }
@@ -75,6 +79,10 @@
   margin-left: 100px;
 }
 
+.pr-100 {
+  padding-right: 100px;
+}
+
 .ml-335 {
   margin-left: 335px;
 }
@@ -97,8 +105,16 @@ h3 {
 }
 
 .h1 {  
-  font-size: 60px;
+  @include responsive-font-size(30, 60);
 }
+
+.r-fz-30-18 {
+  @include responsive-font-size(18, 30);
+}
+
+.r-fz-18-12 {
+  @include responsive-font-size(12, 18);
+} 
 
 .h2 {  
   font-size: 38px;

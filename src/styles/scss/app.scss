@@ -44,6 +44,11 @@ ul > li {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+
+  overflow: hidden;
+  @include media(large) {
+    padding: 0 20px;
+  }
 }
 
 @import "layout/grid";
