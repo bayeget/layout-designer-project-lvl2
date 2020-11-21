@@ -1,0 +1,29 @@
+.discography-wrap {
+  gap: 50px;
+  @include media(small) {
+    gap: 50px 20px;
+  }
+}
+.discography-img {
+  position: relative;
+
+  margin-bottom: 10px;
+  max-width: 250px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.discography-title {
+  @include responsive-font-size(16, 20);
+  margin-bottom: 10px;
+
+  text-align: left;
+  text-transform: none;
+  font-weight: 700;
+}
+
+.discography-year {
+  @include responsive-font-size(14, 16);  
+}

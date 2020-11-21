@@ -40,6 +40,10 @@
   gap: 30px;
 }
 
+.gap-50 {
+  gap: 50px;
+}
+
 .gap-75 {
   gap: 75px;
 }
@@ -404,6 +408,10 @@
   margin-left: 335px;
 }
 
+.mr-35 {
+  margin-right: 35px;
+}
+
 .mr-100 {
   margin-right: 100px;
 }
@@ -488,11 +496,11 @@ h3 {
 }
 
 .text-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .text-left {
-  text-align: left;
+  text-align: left !important;
 }
 
 .bg-green {
@@ -534,6 +542,7 @@ button {
 }
 
 .btn {
+  position: relative;
   display: inline-block;
   padding: 18px 30px;
   border: 1px solid transparent;
@@ -566,6 +575,16 @@ button {
   background-color: var(--color-pink);
 }
 
+.btn-purple {
+  color: var(--color-white);
+  background-color: var(--color-purple);
+}
+
+.btn-brown {
+  color: var(--color-white);
+  background-color: var(--color-brown);
+}
+
 .btn-full {
   width: 100%;
 }
@@ -580,6 +599,19 @@ button {
   border-color: #e9e9e9;
   color: var(--color-grey);
   background-color: transparent;
+}
+
+.btn-icon {
+  width: 200px;
+  padding: 20px 50px;
+  text-align: left;
+}
+.btn-icon .icon {
+  position: absolute;
+  left: 20px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
 }
 
 .subscription {
@@ -687,6 +719,117 @@ button {
 
 .mobile-app-img {
   max-width: 100%;
+}
+
+.track {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.track-wrap {
+  gap: 25px 68px;
+}
+@media screen and (max-width: 992px) {
+  .track-wrap {
+    gap: 25px;
+  }
+}
+
+.track-img {
+  position: relative;
+  width: 55px;
+  height: 50px;
+  margin-right: 16px;
+}
+.track-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.track-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.track-song {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.track-artist {
+  color: var(--color-link-secondary);
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.discography-wrap {
+  gap: 50px;
+}
+@media screen and (max-width: 768px) {
+  .discography-wrap {
+    gap: 50px 20px;
+  }
+}
+
+.discography-img {
+  position: relative;
+  margin-bottom: 10px;
+  max-width: 250px;
+}
+.discography-img img {
+  width: 100%;
+  height: auto;
+}
+
+.discography-title {
+  font-size: calc( 0.0025 * 100vw + 15.2px );
+  margin-bottom: 10px;
+  text-align: left;
+  text-transform: none;
+  font-weight: 700;
+}
+
+.discography-year {
+  font-size: calc( 0.00125 * 100vw + 13.6px );
+}
+
+.similar-artist-wrap {
+  gap: 50px;
+}
+@media screen and (max-width: 768px) {
+  .similar-artist-wrap {
+    gap: 50px 20px;
+  }
+}
+
+.similar-artist {
+  text-align: center;
+}
+
+.similar-artist-img {
+  position: relative;
+  margin-bottom: 15px;
+  max-width: 250px;
+}
+.similar-artist-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.similar-artist-title {
+  font-size: calc( 0.0025 * 100vw + 15.2px );
+  margin-bottom: 10px;
+  text-transform: none;
+  font-weight: 700;
+}
+
+.similar-artist-fans {
+  font-size: calc( 0.00125 * 100vw + 13.6px );
 }
 
 body {
@@ -1094,6 +1237,8 @@ ul > li {
 }
 .menu-item {
   color: var(--color-link-secondary);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .menu-item.active {
   color: var(--color-white);
@@ -1148,12 +1293,12 @@ ul > li {
   }
 }
 
-.banner {
+.banner-main {
   position: relative;
   width: 100%;
   padding: 272px 0 248px;
 }
-.banner:before {
+.banner-main:before {
   position: absolute;
   top: 0;
   right: 0;
@@ -1166,19 +1311,37 @@ ul > li {
   content: "";
 }
 @media screen and (max-width: 992px) {
-  .banner {
+  .banner-main {
     padding-bottom: 200px;
   }
 }
 @media screen and (max-width: 768px) {
-  .banner {
+  .banner-main {
     padding-bottom: 100px;
   }
 }
 @media screen and (max-width: 425px) {
-  .banner {
+  .banner-main {
     padding-bottom: 44px;
   }
+}
+
+.banner-artist {
+  position: relative;
+  width: 100%;
+  padding: 280px 0 76px;
+}
+.banner-artist:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../images/Morten Harket.png");
+  content: "";
 }
 
 .footer {

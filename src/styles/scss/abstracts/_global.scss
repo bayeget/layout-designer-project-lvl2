@@ -26,6 +26,10 @@
   gap: 30px;
 }
 
+.gap-50 {
+  gap: 50px
+}
+
 .gap-75 {
   gap: 75px;
 }
@@ -91,6 +95,10 @@
   margin-left: 335px;
 }
 
+.mr-35 {
+  margin-right: 35px;
+}
+
 .mr-100 {
   margin-right: 100px;
 }
@@ -149,11 +157,11 @@ $main-font-size: 11, 12, 14, 16, 18, 22, 24, 30, 60;
 }
 
 .text-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .text-left {
-  text-align: left;
+  text-align: left !important;
 }
 
 .bg-green {

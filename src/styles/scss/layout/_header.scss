@@ -16,6 +16,9 @@
   width: 405px;  
   &-item {
     color: var(--color-link-secondary);
+    font-weight: 700;
+    text-transform: uppercase;
+    
     &.active {
       color: var(--color-white);
     }
