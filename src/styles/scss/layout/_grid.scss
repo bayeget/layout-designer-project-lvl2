@@ -13,3 +13,12 @@
     
   }
 }
+@each $breakpoint, $value in $breakpoints {
+  @for $i from 1 to 13 {
+    .col-#{nth($value, 2)}-#{$i} {
+      @include media($breakpoint) {
+        grid-column: span #{$i};    
+      }    
+    }
+  }
+}

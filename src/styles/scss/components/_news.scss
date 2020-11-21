@@ -1,12 +1,9 @@
 .news {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  gap: 30px;
+  grid-column-gap: 30px;
 
   @include media(small) {
-    flex-direction: column;
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
   }
 }
 

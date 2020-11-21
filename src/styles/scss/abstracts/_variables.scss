@@ -12,3 +12,10 @@
   --color-link-secondary: #808080;
 }
 
+
+$breakpoints: (
+  large: (1280px, lg),
+  medium: (992px, md),
+  small: (768px, sm),
+  extrasmall: (425px, xs)
+);
