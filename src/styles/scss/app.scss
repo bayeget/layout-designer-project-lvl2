@@ -1,14 +1,13 @@
+@import "abstracts/functions";
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "abstracts/global";
 
 @import "components/registration-form";
 @import "components/btn";
-@import "components/subscription-item";
+@import "components/subscription";
 @import "components/news";
-
-
-
+@import "components/mobile-app";
 
 body {
   box-sizing: border-box;
@@ -43,11 +42,14 @@ ul > li {
 
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
 
   overflow: hidden;
   @include media(large) {
     padding: 0 20px;
+  }
+  @include media(small) {
+    margin-bottom: 90px;
   }
 }
 

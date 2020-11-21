@@ -1,0 +1,56 @@
+.subscription {
+  display: flex;
+  justify-content: space-between;
+  @include media(large) {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
+
+.subscription-info {
+  @include responsive-font-size(12, 22);
+
+  text-align: center;
+  color: var(--color-white);
+}
+
+.subscription-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 352px;
+  height: 580px;
+  padding: 25px 25px 60px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include media(large) {
+    width: 280px;
+    height: 463px;    
+    padding: 20px 20px 15px;
+    
+  }
+}
+
+.subscription-item-font {
+  @include responsive-font-size(16, 24);
+}
+
+.subscription-item-currency {
+  padding-top: 7px;
+}
+
+$subscription: (
+  free: "'../../images/subscribe_1.png'",
+  standart: "'../../images/subscribe_2.png'",
+  premium: "'../../images/subscribe_3.png'",
+);
+
+@each $tarif, $url in $subscription {
+  .subscription-item-#{$tarif} {
+    background-image: url(#{$url});
+  }
+}

@@ -18,6 +18,10 @@ button {
   &.border-width-4 {
     padding: 12px 30px;
   }
+
+  @include media(custom, 570px) {
+    width: 100%;
+  }
 }
 
 .btn-large {

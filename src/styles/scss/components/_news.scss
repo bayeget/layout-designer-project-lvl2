@@ -1,3 +1,20 @@
+.news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 30px;
+
+  @include media(small) {
+    flex-direction: column;
+  }
+}
+
+.news-img {
+  width: 100%;
+  height: auto;
+}
+
 .news-author {
   width: 221px;
   height: 28px;
@@ -12,6 +29,12 @@
 
 .news-author-date {
   color: var(--color-555);
+}
+
+.news-info {
+  @include media(small) {
+    order: 1;
+  }
 }
 
 .news-btn {

@@ -1,0 +1,18 @@
+.mobile-app {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include media(small) {
+    flex-direction: column;
+  }
+}
+
+.mobile-app-info {
+  @include media(small) {
+    order: 1;  
+  }  
+}
+
+.mobile-app-img {
+  max-width: 100%;
+}
