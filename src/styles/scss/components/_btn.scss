@@ -22,7 +22,7 @@ button {
   }
 
   @include media(extrasmall) {
-    width: 100%;
+    width: 100% !important;
   }
 }
 
@@ -54,10 +54,6 @@ button {
   background-color: var(--color-brown);
 }
 
-.btn-full {
-  width: 100%;
-}
-
 .btn-outline-white {
   border-color: var(--color-white);
   color: var(--color-white);
@@ -85,4 +81,9 @@ button {
     width: 16px;
     height: 16px;
   }
+}
+
+
+.btn-full {
+  width: 100%;
 }
