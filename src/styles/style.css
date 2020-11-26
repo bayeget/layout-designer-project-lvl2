@@ -62,11 +62,11 @@
   font-weight: 700;
 }
 
-.tt-u {
+.text-transform-uppercase {
   text-transform: uppercase;
 }
 
-.tt-n {
+.text-transform-none {
   text-transform: none !important;
 }
 
