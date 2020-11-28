@@ -2,8 +2,8 @@
   background: linear-gradient(89.75deg, #5328A1 32.83%, #95390C 81.56%);
 
   a {
-    text-decoration: none;
     color: var(--color-light);
+    text-decoration: none;    
   }
 }
 .menu-footer {
@@ -17,16 +17,15 @@
 }
 
 .menu-footer-end {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;  
   width: 534px;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
   @include media(small) {
-    max-width: 534px;
     width: 100%;
+    max-width: 534px;    
   }
 
   @include media(extrasmall) {

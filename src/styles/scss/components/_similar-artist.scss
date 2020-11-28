@@ -12,11 +12,12 @@
 .similar-artist-img {
   position: relative;
 
-  margin-bottom: 15px;
   max-width: 250px;
+  margin-bottom: 15px;  
   img {
     width: 100%;
     height: auto;
+  
     border-radius: 50%;
   }
 }
@@ -25,8 +26,8 @@
   @include responsive-font-size(16, 20);
   margin-bottom: 10px;
 
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;  
 }
 
 .similar-artist-fans {

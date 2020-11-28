@@ -2,17 +2,18 @@
   display: flex;
   justify-content: space-between;
   @include media(large) {
-    justify-content: center;
     flex-wrap: wrap;
+    // safari не поддерживает
     gap: 50px;
+    justify-content: center;        
   }
 }
 
 .subscription-info {
   @include responsive-font-size(12, 22);
 
-  text-align: center;
   color: var(--color-white);
+  text-align: center;  
 }
 
 .subscription-item {
@@ -24,8 +25,8 @@
   height: 580px;
   padding: 25px 25px 60px;
 
-  background-size: contain;
   background-repeat: no-repeat;
+  background-size: contain;  
 
   @include media(large) {
     width: 280px;

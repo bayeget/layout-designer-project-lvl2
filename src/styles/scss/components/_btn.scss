@@ -8,13 +8,12 @@ button {
   display: inline-block;
   padding: 18px 30px;
 
-  border: 1px solid transparent;
-  border-radius: 5px;
-  
+  line-height: 1.16;
   text-transform: uppercase;
   text-decoration: none;
-
-  line-height: 1.16;
+  
+  border: 1px solid transparent;
+  border-radius: 5px;
 
   cursor: pointer;
   &.border-width-4 {
@@ -55,15 +54,17 @@ button {
 }
 
 .btn-outline-white {
-  border-color: var(--color-white);
   color: var(--color-white);
+
   background-color: transparent;
+  border-color: var(--color-white);
 }
 
 .btn-outline-grey {
-  border-color: #e9e9e9;
   color: var(--color-grey);
+
   background-color: transparent;
+  border-color: #e9e9e9;
 }
 
 .btn-icon {

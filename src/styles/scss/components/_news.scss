@@ -2,8 +2,8 @@
   grid-column-gap: 30px;
 
   @include media(small) {
-    grid-column-gap: 0;
     grid-row-gap: 20px;
+    grid-column-gap: 0;    
   }
 }
 
@@ -36,5 +36,6 @@
 
 .news-btn {
   padding: 8px 30px;
+
   line-height: 28px;
 }

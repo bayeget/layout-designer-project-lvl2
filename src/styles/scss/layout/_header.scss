@@ -1,15 +1,15 @@
 .header {
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   
+  z-index: 1;
+
   width: 100%;
-  height: 30px;
+  height: 30px;  
 
   font-size: 11px;
-  line-height: 1.18;
-
-  z-index: 1;
+  line-height: 1.18;  
 }
 
 .menu {
@@ -30,13 +30,13 @@
     }
   }
   @include media(small) {
-    max-width: 405px;
     width: 100%;
+    max-width: 405px;    
   }
   @include media(extrasmall) {
-    margin: 0;
     flex-direction: column;
     align-items: flex-start;
+    margin: 0;    
   }
 }
 
@@ -53,12 +53,11 @@
   padding-right: 14px;
   padding-left: 14px;
 
-  background: #3c3b3d;
+  color: #808080;
 
+  background: #3c3b3d;
   border: 0;
   border-radius: 50px;
-
-  color: #808080;
 
   &:focus,
   &:hover {
@@ -68,8 +67,8 @@
 
 .nav {
   @include media(medium) {
-    order: 1;
     flex-basis: 100%;
-    margin-top: 20px;
+    order: 1;
+    margin-top: 20px;    
   }
 }

@@ -7,8 +7,8 @@
 .discography-img {
   position: relative;
 
-  margin-bottom: 10px;
   max-width: 250px;
+  margin-bottom: 10px;  
   img {
     width: 100%;
     height: auto;
@@ -19,9 +19,9 @@
   @include responsive-font-size(16, 20);
   margin-bottom: 10px;
 
-  text-align: left;
-  text-transform: none;
   font-weight: 700;
+  text-align: left;
+  text-transform: none;  
 }
 
 .discography-year {
