@@ -45,9 +45,9 @@
 }
 
 $subscription: (
-  free: "'../../images/subscribe_1.png'",
-  standart: "'../../images/subscribe_2.png'",
-  premium: "'../../images/subscribe_3.png'",
+  free: "'../images/subscribe_1.png'",
+  standart: "'../images/subscribe_2.png'",
+  premium: "'../images/subscribe_3.png'",
 );
 
 @each $tarif, $url in $subscription {
