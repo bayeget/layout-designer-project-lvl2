@@ -192,3 +192,17 @@ $main-font-size: 11, 12, 14, 16, 18, 22, 24, 30, 60;
 .border-radius-50 {
   border-radius: 50px !important;
 }
+
+.w-100 {
+  width: 100%;
+}
+
+.mw-100 {
+  max-width: 100%;
+}
+
+.order-sm-1 {
+  @include media(small) {
+    order: 1;  
+  }
+}

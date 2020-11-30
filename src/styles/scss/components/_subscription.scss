@@ -22,22 +22,26 @@
   justify-content: space-between;
 
   width: 352px;
-  height: 580px;
   padding: 25px 25px 60px;
 
   background-repeat: no-repeat;
   background-size: contain;  
 
   @include media(large) {
-    width: 280px;
-    height: 463px;    
-    padding: 20px 20px 15px;
-    
+    width: 280px;   
+    padding: 20px 20px 15px;    
+  }
+}
+
+.subscription-item-title {
+  margin-bottom: 220px;
+  @include media(large) {
+    margin-bottom: 160px;
   }
 }
 
 .subscription-item-font {
-  @include responsive-font-size(16, 24);
+  @include responsive-font-size(16, 24);  
 }
 
 .subscription-item-currency {

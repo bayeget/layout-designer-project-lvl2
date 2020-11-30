@@ -1,0 +1,19 @@
+
+.logo {
+  position: relative;
+
+  padding-left: 24px;
+
+  color: var(--color-white);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo-img {
+  position: absolute;
+  top: -3px;
+  left: 0;
+
+  width: 20px;
+  height: 17px;
+}

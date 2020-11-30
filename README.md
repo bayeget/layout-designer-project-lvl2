@@ -2,4 +2,4 @@
 ![Actions Status](/workflows/hexlet-check/badge.svg)
 
 
-[Ссылка на surge](http://silly-tin.surge.sh/)
+[Ссылка на surge](http://cheap-island.surge.sh/)

@@ -533,9 +533,21 @@ h3 {
   border-radius: 50px !important;
 }
 
-.registration-form {
-  position: relative;
+.w-100 {
   width: 100%;
+}
+
+.mw-100 {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .order-sm-1 {
+    order: 1;
+  }
+}
+
+.registration-form {
   max-width: 570px;
 }
 
@@ -624,10 +636,6 @@ button {
   height: 16px;
 }
 
-.btn-full {
-  width: 100%;
-}
-
 .subscription {
   display: flex;
   justify-content: space-between;
@@ -651,7 +659,6 @@ button {
   flex-direction: column;
   justify-content: space-between;
   width: 352px;
-  height: 580px;
   padding: 25px 25px 60px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -659,8 +666,16 @@ button {
 @media screen and (max-width: 1280px) {
   .subscription-item {
     width: 280px;
-    height: 463px;
     padding: 20px 20px 15px;
+  }
+}
+
+.subscription-item-title {
+  margin-bottom: 220px;
+}
+@media screen and (max-width: 1280px) {
+  .subscription-item-title {
+    margin-bottom: 160px;
   }
 }
 
@@ -845,6 +860,22 @@ button {
 
 .similar-artist-fans {
   font-size: calc( 0.00125 * 100vw + 13.6px );
+}
+
+.logo {
+  position: relative;
+  padding-left: 24px;
+  color: var(--color-white);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo-img {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 20px;
+  height: 17px;
 }
 
 body {
